@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Convert Fahrenheit to Celsius, with JS" />
+  <meta name="description" content="Random Number guess, with JS" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Adrina peighamabrzadeh" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Convert Fahrenheit to Celsius, with JS</title>
+  <title>Random Number guess, with JS</title>
 </head>
 
 <body>
@@ -24,33 +24,31 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Convert Fahrenheit to Celsius, with JS</span>
+        <span class="mdl-layout-title">Random Number guess, with JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/image (1).png" alt="temptaure pic, with JS" />
+        <img src="./images/dice.gif" alt="temptaure pic, with JS" />
       </div>
       <br />
       <div class="page-content">Please enter indgree between 1 to 6:</div>
       <form>
-        <label class="page-content">A number between 1 to 6: </label>
         <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-number" />
-          <label class="mdl-textfield__label" for="a-base-of-trapezoid">dgree in Fahrenheit(°F)</label>
+          <label class="mdl-textfield__label" for="a-base-of-trapezoid">Number between 1 to 6</label>
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
-        <label class="page-content">°F</label>
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateConvert()" type="button">
-          Calculate
+          onclick="check()" type="button">
+          Check
         </button>
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="answer"></div>
+        <div id="result"></div>
       </div>
     </main>
   </div>
