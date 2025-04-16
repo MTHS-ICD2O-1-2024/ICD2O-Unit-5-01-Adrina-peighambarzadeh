@@ -4,23 +4,24 @@
 
 // Created on: Apr 2025
 // This file contains the JS functions for index.html
-
-"use strict"
-/**
+const ramdomNumber = Math.floor(Math.random() * 6) + 1
+/*
 * This function calculates the area of a triangle.
 */
-function calculateConvert() {
+function checkNumber() {
   // input
-
-  const dgreeInFahrenheit = parseFloat(
-    document.getElementById("dgree-in-fahrenheit").value
-  )
+  const userNumber =  parseInt(document.getElementById("user-number").value)
 
   // process
-  const ConvertedToCelsius =
-    (dgreeInFahrenheit - 32) * (5 / 9)
+  if (userNumber== randomNumber) {
+    // output
+  document.getElementById("result").innerHTML =
+    "You have gussed the correct number!"
+}
 
-  // output
-  document.getElementById("answer").innerHTML =
-    "your dgree in celsius is: " + ConvertedToCelsius.toFixed(3) + "°C"
+  if (userNumber != randomNumber) {
+    //output
+    document.getElementById("result"). innerHTML =
+    "You have gussed the wrong number!"
+  }
 }
